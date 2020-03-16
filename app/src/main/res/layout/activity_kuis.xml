@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ivory"
+    tools:context=".KuisActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        app:titleTextColor="@color/colorAccent"
+        android:textAlignment="center">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/play"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="30dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/play"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/txt_soal"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/white">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/jawaban"
+                    android:layout_width="280dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/white">
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/selanjutnya"
+                    android:layout_width="280dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button_selanjutnya"
+                    android:text="Selanjutnya"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/alqalam"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

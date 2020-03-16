@@ -65,14 +65,5 @@ public class MainActivity extends AppCompatActivity {
 //        super.onBackPressed();
 //    }
 
-//    private boolean getFragmentpage(Fragment fragment){
-//        if (fragment != null){
-//            getSupportFragmentManager()
-//                    .beginTransaction()
-//                    .replace(R.id.page_container, fragment)
-//                    .commit();
-//            return true;
-//        }
-//        return false;
-//    }
+
 }

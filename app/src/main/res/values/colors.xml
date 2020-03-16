@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D52A6E</color>
     <color name="selectorColor">#2F4F4F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ivory">#fafafa</color>
 </resources>

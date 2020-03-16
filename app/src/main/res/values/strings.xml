@@ -2,6 +2,20 @@
     <string name="app_name">Edukasi Tajwid Pemula</string>
     <string name="home">Home</string>
     <string name="kuis">Kuis</string>
+    <string name="ttg_tajwid">Tentang Ilmu Tajwid</string>
+    <string name="Tips_Tajwid">Tips Belajar Ilmu Tajwid</string>
+    <string name="Mkhj_Huruf">Makhorijul Huruf</string>
+    <string name="Hukum_Tajwid">Hukum Tajwid</string>
+    <string name="kuis1">Kuis 1</string>
+    <string name="kuis2">Kuis 2</string>
+    <string name="kuis3">Kuis 3</string>
+    <string name="kuis4">Kuis 4</string>
+    <string name="kuis5">Kuis 5</string>
+    <string name="kuis6">Kuis 6</string>
+    <string name="kuis7">Kuis 7</string>
+    <string name="kuis8">Kuis 8</string>
+    <string name="kuis9">Kuis 9</string>
+    <string name="kuis10">Kuis 10</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
