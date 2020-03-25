@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory"
+    tools:context=".TentangIlmuTajwidActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        app:titleTextColor="@color/colorAccent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar">
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/alqalam"
+            android:textColor="@color/colorAccent"
+            android:text="Ilmu Tajwid"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judul">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/isi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/alqalam"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"
+                    android:text="@string/isi_ttg_tajwid"/>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

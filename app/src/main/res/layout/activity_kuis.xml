@@ -14,8 +14,7 @@
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
         android:elevation="8dp"
-        app:titleTextColor="@color/colorAccent"
-        android:textAlignment="center">
+        app:titleTextColor="@color/colorAccent">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -30,21 +29,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/play"
+
+                <FrameLayout
                     android:layout_width="280dp"
                     android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="30dp"
-                    android:padding="10dp"
                     android:layout_gravity="center"
-                    app:cardBackgroundColor="@color/colorPrimaryDark">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_button_play">
+                    </Button>
+
                     <ImageView
+                        android:id="@+id/play"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/play"
-                        android:layout_gravity="center"/>
-                </androidx.cardview.widget.CardView>
+                        android:layout_gravity="center"
+                        android:src="@drawable/play"/>
+                </FrameLayout>
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/txt_soal"
@@ -56,24 +63,70 @@
                     android:layout_gravity="center"
                     app:cardBackgroundColor="@color/white">
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|right"
+                        android:fontFamily="@font/alqalam"
+                        android:text="Ini Soal"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/jawaban"
                     android:layout_width="280dp"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="20dp"
                     android:padding="10dp"
                     android:layout_gravity="center"
                     app:cardBackgroundColor="@color/white">
 
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="30dp"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/alqalam"
+                            android:text="Jawaban"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/alqalam"
+                            android:text="Jawaban"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/alqalam"
+                            android:text="Jawaban"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/alqalam"
+                            android:text="Jawaban"
+                            />
+                    </RadioGroup>
                 </androidx.cardview.widget.CardView>
 
                 <Button
                     android:id="@+id/selanjutnya"
-                    android:layout_width="280dp"
-                    android:layout_height="80dp"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:background="@drawable/custom_button_selanjutnya"
