@@ -1,18 +1,16 @@
-package com.example.tapbd3;
+package com.example.tapbd3.activity;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.tapbd3.R;
+import com.example.tapbd3.fragment.HomeFragment;
+import com.example.tapbd3.fragment.KuisFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ivory"
-    tools:context=".TentangIlmuTajwidActivity">
+    tools:context=".activity.TentangIlmuTajwidActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -18,43 +18,38 @@
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
+        android:id="@+id/Ljudul"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@+id/toolbar">
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/bg_judul_ttg_tajwid">
+
         <TextView
             android:id="@+id/judul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
             android:fontFamily="@font/alqalam"
-            android:textColor="@color/colorAccent"
-            android:text="Ilmu Tajwid"/>
+            android:gravity="center"
+            android:text="Ilmu Tajwid"
+            android:textColor="@color/pinkquad"
+            android:textSize="30dp" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/judul">
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                app:cardCornerRadius="10dp">
-                <TextView
-                    android:id="@+id/isi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:fontFamily="@font/alqalam"
-                    android:textSize="20dp"
-                    android:layout_margin="20dp"
-                    android:text="@string/isi_ttg_tajwid"/>
-            </androidx.cardview.widget.CardView>
-        </ScrollView>
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_below="@+id/Ljudul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button_play"/>
+    </ScrollView>
 </RelativeLayout>
