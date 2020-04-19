@@ -14,12 +14,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tajwidpemula.R;
 import com.example.tajwidpemula.activity.MakhorijulHurufActivity;
 
-public class CustomAdapterMakhorijulHuruf extends RecyclerView.Adapter<CustomAdapterMakhorijulHuruf.ViewHolder> {
+public class CustomAdapterContoh extends RecyclerView.Adapter<CustomAdapterContoh.ViewHolder> {
 
     private String[] SubjectValues;
     private Context context;
 
-    public CustomAdapterMakhorijulHuruf(String[] SubjectValues1) {
+    public CustomAdapterContoh(String[] SubjectValues1) {
 
         SubjectValues = SubjectValues1;
     }
@@ -40,9 +40,9 @@ public class CustomAdapterMakhorijulHuruf extends RecyclerView.Adapter<CustomAda
 
     @NonNull
     @Override
-    public CustomAdapterMakhorijulHuruf.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomAdapterContoh.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_view_menu_makhorijul_huruf, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_view_contoh, parent, false);
 
         return new ViewHolder(view);
     }
@@ -51,16 +51,16 @@ public class CustomAdapterMakhorijulHuruf extends RecyclerView.Adapter<CustomAda
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
         holder.textView.setText(SubjectValues[position]);
-        holder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent pindah;
-                if (position==0){
-                    pindah = new Intent(v.getContext(), MakhorijulHurufActivity.class);
-                    v.getContext().startActivity(pindah);
-                }
-            }
-        });
+//        holder.cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent pindah;
+//                if (position==0){
+//                    pindah = new Intent(v.getContext(), MakhorijulHurufActivity.class);
+//                    v.getContext().startActivity(pindah);
+//                }
+//            }
+//        });
     }
 
     @Override
