@@ -9,7 +9,30 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MakhorijulHurufActivity"></activity>
+        <activity
+            android:name=".activity.HukumTajwidActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SubMenuHukumTajwidActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MakhorijulHurufActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
+        </activity>
         <activity
             android:name=".activity.MenuHukumTajwidActivity"
             android:label=""
@@ -44,7 +67,7 @@
         </activity>
         <activity
             android:name=".activity.KuisActivity"
-            android:label="@string/kuis"
+            android:label=""
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

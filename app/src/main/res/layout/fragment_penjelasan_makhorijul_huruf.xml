@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ivory"
     tools:context=".fragment.PenjelasanMakhorijulHurufFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
         <RelativeLayout
-            android:layout_marginTop="10dp"
+            android:id="@+id/play"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -28,7 +28,6 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/play"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/ic_play"/>

@@ -12,12 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.tajwidpemula.R;
-import com.example.tajwidpemula.adapter.CustomAdapterContohMakhorijulHuruf;
+import com.example.tajwidpemula.adapter.CustomAdapterContohHukumTajwid;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ContohMakhorijulHurufFragment extends Fragment {
+public class ContohHukumTajwidFragment extends Fragment {
 
     Context context;
     RecyclerView recyclerView;
@@ -33,15 +33,16 @@ public class ContohMakhorijulHurufFragment extends Fragment {
 //            "Huruf Na", "Huruf Wa", "Huruf Haa'",
 //            "Huruf La", "Huruf Ya"
     };
-    public ContohMakhorijulHurufFragment() {
+
+    public ContohHukumTajwidFragment() {
         // Required empty public constructor
     }
 
-    public static ContohMakhorijulHurufFragment newInstance() {
+    public static ContohHukumTajwidFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        ContohMakhorijulHurufFragment fragment = new ContohMakhorijulHurufFragment();
+        ContohHukumTajwidFragment fragment = new ContohHukumTajwidFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,12 +52,12 @@ public class ContohMakhorijulHurufFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_contoh_makhorijul_huruf, container, false);
+        View v = inflater.inflate(R.layout.fragment_contoh_hukum_tajwid, container, false);
 
         recyclerView = v.findViewById(R.id.recyclerview);
         recylerViewLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(recylerViewLayoutManager);
-        recyclerViewAdapter = new CustomAdapterContohMakhorijulHuruf(subjects);
+        recyclerViewAdapter = new CustomAdapterContohHukumTajwid(subjects);
         recyclerView.setAdapter(recyclerViewAdapter);
 
         return v;

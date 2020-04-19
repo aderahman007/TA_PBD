@@ -1,7 +1,6 @@
 package com.example.tajwidpemula.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +11,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tajwidpemula.R;
-import com.example.tajwidpemula.activity.MakhorijulHurufActivity;
 
-public class CustomAdapterContoh extends RecyclerView.Adapter<CustomAdapterContoh.ViewHolder> {
+public class CustomAdapterContohMakhorijulHuruf extends RecyclerView.Adapter<CustomAdapterContohMakhorijulHuruf.ViewHolder> {
 
     private String[] SubjectValues;
     private Context context;
 
-    public CustomAdapterContoh(String[] SubjectValues1) {
+    public CustomAdapterContohMakhorijulHuruf(String[] SubjectValues1) {
 
         SubjectValues = SubjectValues1;
     }
@@ -40,7 +38,7 @@ public class CustomAdapterContoh extends RecyclerView.Adapter<CustomAdapterConto
 
     @NonNull
     @Override
-    public CustomAdapterContoh.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomAdapterContohMakhorijulHuruf.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_view_contoh, parent, false);
 

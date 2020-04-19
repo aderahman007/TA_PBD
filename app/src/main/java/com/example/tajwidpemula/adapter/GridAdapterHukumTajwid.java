@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tajwidpemula.R;
+import com.example.tajwidpemula.activity.SubMenuHukumTajwidActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,19 +78,40 @@ public class GridAdapterHukumTajwid extends RecyclerView.Adapter<GridAdapterHuku
         viewHolder.tvspecies.setText(nature.getName());
         viewHolder.imgThumbnail.setImageResource(nature.getThumnail());
 
-//        viewHolder.card.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent pindah;
-//                if (i==0){
-//                    pindah = new Intent(v.getContext(), TentangIlmuTajwidActivity.class);
-//                    v.getContext().startActivity(pindah);
-//                }else if (i==1){
-//                    pindah = new Intent(v.getContext(), TipsBelajarIlmuTajwidActivity.class);
-//                    v.getContext().startActivity(pindah);
-//                }
-//            }
-//        });
+        viewHolder.card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pindah;
+                if (i==0){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==1){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==2){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==3){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==4){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==5){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==6){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==7){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==8){
+                    pindah = new Intent(v.getContext(), SubMenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
+                }
+            }
+        });
 
 
     }
