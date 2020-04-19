@@ -1,7 +1,6 @@
-package com.example.tapbd3.fragment;
+package com.example.tajwidpemula.fragment;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -13,10 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.tapbd3.activity.KuisActivity;
-import com.example.tapbd3.R;
-import com.example.tapbd3.adapter.GridAdapterHome;
-import com.example.tapbd3.adapter.GridAdapterKuis;
+import com.example.tajwidpemula.R;
+import com.example.tajwidpemula.adapter.GridAdapterKuis;
 
 
 /**

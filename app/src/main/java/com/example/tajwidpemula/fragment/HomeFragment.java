@@ -1,12 +1,10 @@
-package com.example.tapbd3.fragment;
+package com.example.tajwidpemula.fragment;
 
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,11 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.tapbd3.R;
-import com.example.tapbd3.adapter.GridAdapterHome;
+import com.example.tajwidpemula.R;
+import com.example.tajwidpemula.adapter.GridAdapterHome;
 
 
 /**

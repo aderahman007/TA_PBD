@@ -1,6 +1,6 @@
-package com.example.tapbd3.adapter;
+package com.example.tajwidpemula.adapter;
 
-public class GridItemHome {
+public class GridItemHukumTajwid {
     private String mName;
     private int mThumnail;
 
@@ -19,5 +19,4 @@ public class GridItemHome {
     public void setThumbnail(int logo_app) {
         this.mThumnail = logo_app;
     }
-
 }

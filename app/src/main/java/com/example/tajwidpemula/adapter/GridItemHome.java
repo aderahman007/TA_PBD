@@ -1,6 +1,6 @@
-package com.example.tapbd3.adapter;
+package com.example.tajwidpemula.adapter;
 
-public class GridItemKuis {
+public class GridItemHome {
     private String mName;
     private int mThumnail;
 

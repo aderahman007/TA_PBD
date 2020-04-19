@@ -1,4 +1,4 @@
-package com.example.tapbd3.adapter;
+package com.example.tajwidpemula.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tapbd3.R;
+import com.example.tajwidpemula.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -110,8 +110,8 @@ public class GridAdapterKuis extends RecyclerView.Adapter<GridAdapterKuis.ViewHo
 
         public ViewHolder(View itemView) {
             super(itemView);
-            imgThumbnail = (ImageView)itemView.findViewById(R.id.img_item_home);
-            tvspecies = (TextView)itemView.findViewById(R.id.judul_item_home);
+            imgThumbnail = (ImageView)itemView.findViewById(R.id.img_item);
+            tvspecies = (TextView)itemView.findViewById(R.id.judul_item);
 
         }
     }

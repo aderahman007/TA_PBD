@@ -22,12 +22,12 @@
             android:gravity="center"
             android:padding="10dp">
             <ImageView
-                android:id="@+id/img_item_home"
+                android:id="@+id/img_item"
                 android:layout_width="140dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"/>
             <TextView
-                android:id="@+id/judul_item_home"
+                android:id="@+id/judul_item"
                 android:layout_width="140dp"
                 android:layout_height="40dp"
                 android:textSize="15dp"

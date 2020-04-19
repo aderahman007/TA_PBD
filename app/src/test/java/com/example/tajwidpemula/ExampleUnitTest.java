@@ -1,4 +1,4 @@
-package com.example.tapbd3;
+package com.example.tajwidpemula;
 
 import org.junit.Test;
 

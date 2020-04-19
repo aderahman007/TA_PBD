@@ -1,4 +1,4 @@
-package com.example.tapbd3.activity;
+package com.example.tajwidpemula.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.example.tapbd3.R;;
+import com.example.tajwidpemula.R;;
 
 public class OnboardingActivity extends AppCompatActivity {
 

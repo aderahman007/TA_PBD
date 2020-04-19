@@ -1,4 +1,4 @@
-package com.example.tapbd3.activity;
+package com.example.tajwidpemula.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,9 +6,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 
-import com.example.tapbd3.R;
+import com.example.tajwidpemula.R;
 
 public class TipsBelajarIlmuTajwidActivity extends AppCompatActivity {
 

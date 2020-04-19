@@ -1,4 +1,4 @@
-package com.example.tapbd3.activity;
+package com.example.tajwidpemula.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,9 +7,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.tapbd3.R;
-import com.example.tapbd3.fragment.HomeFragment;
-import com.example.tapbd3.fragment.KuisFragment;
+import com.example.tajwidpemula.R;
+import com.example.tajwidpemula.fragment.HomeFragment;
+import com.example.tajwidpemula.fragment.KuisFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

@@ -1,19 +1,20 @@
-package com.example.tapbd3.adapter;
+package com.example.tajwidpemula.adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tapbd3.R;
-import com.example.tapbd3.activity.TentangIlmuTajwidActivity;
-import com.example.tapbd3.activity.TipsBelajarIlmuTajwidActivity;
+import com.example.tajwidpemula.R;
+import com.example.tajwidpemula.activity.MenuHukumTajwidActivity;
+import com.example.tajwidpemula.activity.MenuMakhorijulHurufActivity;
+import com.example.tajwidpemula.activity.TentangIlmuTajwidActivity;
+import com.example.tajwidpemula.activity.TipsBelajarIlmuTajwidActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,12 @@ public class GridAdapterHome extends RecyclerView.Adapter<GridAdapterHome.ViewHo
                 }else if (i==1){
                     pindah = new Intent(v.getContext(), TipsBelajarIlmuTajwidActivity.class);
                     v.getContext().startActivity(pindah);
+                }else if (i==2){
+                    pindah = new Intent(v.getContext(), MenuMakhorijulHurufActivity.class);
+                    v.getContext().startActivity(pindah);
+                }else if (i==3){
+                    pindah = new Intent(v.getContext(), MenuHukumTajwidActivity.class);
+                    v.getContext().startActivity(pindah);
                 }
             }
         });
@@ -92,8 +99,8 @@ public class GridAdapterHome extends RecyclerView.Adapter<GridAdapterHome.ViewHo
 
         public ViewHolder(View itemView) {
             super(itemView);
-            imgThumbnail = (ImageView)itemView.findViewById(R.id.img_item_home);
-            tvspecies = (TextView)itemView.findViewById(R.id.judul_item_home);
+            imgThumbnail = (ImageView)itemView.findViewById(R.id.img_item);
+            tvspecies = (TextView)itemView.findViewById(R.id.judul_item);
             card = (CardView)itemView.findViewById(R.id.card);
 
         }

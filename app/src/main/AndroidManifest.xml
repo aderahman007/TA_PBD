@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tapbd3">
+    package="com.example.tajwidpemula">
 
     <application
         android:allowBackup="true"
@@ -9,6 +9,23 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.MakhorijulHurufActivity"></activity>
+        <activity
+            android:name=".activity.MenuHukumTajwidActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MenuMakhorijulHurufActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
+        </activity>
         <activity
             android:name=".activity.OnboardingActivity"
             android:noHistory="true">
@@ -23,7 +40,7 @@
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
         </activity>
         <activity
             android:name=".activity.KuisActivity"
@@ -31,7 +48,7 @@
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
         </activity>
         <activity
             android:name=".activity.TentangIlmuTajwidActivity"
@@ -39,7 +56,7 @@
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
         </activity>
         <activity
             android:name=".activity.TipsBelajarIlmuTajwidActivity"
@@ -47,7 +64,7 @@
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
+                android:value="com.example.tajwidpemula.activity.MainActivity" />
         </activity>
     </application>
 

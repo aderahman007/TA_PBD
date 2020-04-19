@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuHukumTajwidActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            //Layout logo
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/bghome"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:elevation="8dp"
+                    app:titleTextColor="@color/colorAccent">
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="134dp"
+                    android:layout_marginLeft="134dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="136dp"
+                    android:layout_marginRight="136dp"
+                    android:src="@drawable/logo_app" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_card"
+
+            android:paddingTop="25dp"
+            android:paddingBottom="35dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DASHBORD HUKUM TAJWID"
+                android:fontFamily="@font/alqalam"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

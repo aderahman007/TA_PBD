@@ -1,25 +1,44 @@
-package com.example.tapbd3.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+package com.example.tajwidpemula.fragment;
 
 import android.os.Bundle;
-import android.view.Gravity;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.TextView;
 
-import com.example.tapbd3.R;
+import com.example.tajwidpemula.R;
 
-public class TentangIlmuTajwidActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class PenjelasanMakhorijulHurufFragment extends Fragment {
 
-    Toolbar toolbar;
+    public PenjelasanMakhorijulHurufFragment() {
+        // Required empty public constructor
+    }
+
+
+
+    public static PenjelasanMakhorijulHurufFragment newInstance() {
+
+        Bundle args = new Bundle();
+
+        PenjelasanMakhorijulHurufFragment fragment = new PenjelasanMakhorijulHurufFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tentang_ilmu_tajwid);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_penjelasan_makhorijul_huruf, container, false);
 
-        WebView webView = findViewById(R.id.isi);
+        WebView webView = v.findViewById(R.id.isi);
         String text;
         text = "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. " +
                 "Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, " +
@@ -35,14 +54,6 @@ public class TentangIlmuTajwidActivity extends AppCompatActivity {
                 "zippy fowls. Few quips galvanized the mock jury box.";
         webView.loadData("<p style=\"text-align:justify\">"+ text +"</p", "text/html", "UTF-8");
 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        return v;
     }
 }
